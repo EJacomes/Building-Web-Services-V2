@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Building Web Services - Team Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 24px; }
+        .resumes { display: flex; gap: 16px; }
+        .resume { flex: 1; min-width: 0; }
+        .pdf-container { width: 100%; height: 80vh; border: 1px solid #ccc; }
+        code { background: #f2f2f2; padding: 1px 4px; }
+    </style>
+</head>
+<body>
+    <h1>Building Web Services</h1>
+    <p>Team: Ourania Rahman and Erick Jacomes. This page is served by our own
+       web server (WebServer.py) on the server VM.</p>
+
+    <h2>Cache directive test pages</h2>
+    <ul>
+        <li><a href="/pages/max-age.html">max-age.html</a>: <code>public, max-age=20</code></li>
+        <li><a href="/pages/no-store.html">no-store.html</a>: <code>no-store</code></li>
+        <li><a href="/pages/no-cache.html">no-cache.html</a>: <code>no-cache</code></li>
+        <li><a href="/pages/must-revalidate.html">must-revalidate.html</a>: <code>max-age=10, must-revalidate</code></li>
+        <li><a href="/pages/private.html">private.html</a>: <code>private, max-age=60</code></li>
+        <li><a href="/pages/s-maxage.html">s-maxage.html</a>: <code>public, max-age=5, s-maxage=30</code></li>
+    </ul>
+
+    <h2>Resumes</h2>
+    <div class="resumes">
+        <div class="resume">
+            <h3>Ourania Rahman</h3>
+            <p><a href="/resume/Ourania_Rahman_Resume.pdf">Open Ourania's resume (PDF)</a></p>
+            <embed class="pdf-container" src="/resume/Ourania_Rahman_Resume.pdf" type="application/pdf">
+        </div>
+        <div class="resume">
+            <h3>Erick Jacomes</h3>
+            <p><a href="/resume/Resume.pdf">Open Erick's resume (PDF)</a></p>
+            <embed class="pdf-container" src="/resume/Resume.pdf" type="application/pdf">
+        </div>
+    </div>
+</body>
+</html>

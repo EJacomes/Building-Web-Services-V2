@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>s-maxage test page</title></head>
+<body style="font-family: Arial, sans-serif; margin: 24px;">
+    <h1>Cache directive test: s-maxage</h1>
+    <p>The server sends this page with <code>Cache-Control: public, max-age=5, s-maxage=30</code>.</p>
+    <p>Expected behavior in our web cache: s-maxage overrides max-age for shared caches, so our cache keeps it fresh for 30 seconds, not 5.</p>
+    <p><a href="/">Back to the homepage</a></p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>must-revalidate test page</title></head>
+<body style="font-family: Arial, sans-serif; margin: 24px;">
+    <h1>Cache directive test: must-revalidate</h1>
+    <p>The server sends this page with <code>Cache-Control: max-age=10, must-revalidate</code>.</p>
+    <p>Expected behavior in our web cache: fresh for 10 seconds (HIT). Once stale it must be revalidated. If the server is down, the cache returns 504 instead of a stale copy.</p>
+    <p><a href="/">Back to the homepage</a></p>
+</body>
+</html>

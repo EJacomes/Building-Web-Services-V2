@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>no-cache test page</title></head>
+<body style="font-family: Arial, sans-serif; margin: 24px;">
+    <h1>Cache directive test: no-cache</h1>
+    <p>The server sends this page with <code>Cache-Control: no-cache</code>.</p>
+    <p>Expected behavior in our web cache: stored, but revalidated with the server before every use. The server answers 304 Not Modified, so the cache sends its stored copy (REVALIDATED).</p>
+    <p><a href="/">Back to the homepage</a></p>
+</body>
+</html>
